@@ -1,0 +1,46 @@
+/* Algemeen */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header met logo */
+header {
+    text-align: center;
+    padding: 20px 0 10px;
+    background-color: #f4f4f4;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Navigatiemenu */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;      /* Geen bolletjes */
+    margin: 0;
+    padding: 0;
+    display: flex;         /* Horizontale rij */
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
