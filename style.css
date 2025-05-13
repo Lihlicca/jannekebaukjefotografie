@@ -8,7 +8,6 @@ body {
 header {
     text-align: center;
     padding: 20px 0 10px;
-    background-color: #f4f4f4;
 }
 
 header img {
@@ -18,9 +17,7 @@ header img {
 }
 
 /* Navigatiemenu */
-nav {
-    background-color: #333;
-}
+
 
 nav ul {
     list-style: none;      /* Geen bolletjes */
@@ -37,10 +34,70 @@ nav ul li {
 nav ul li a {
     display: block;
     padding: 15px 20px;
-    color: white;
+    color: #463103;
     text-decoration: none;
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    color: #99958e;
+}
+
+
+/* midden */
+
+
+
+
+footer {
+    background-color: #463103;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;      /* Geen bolletjes */
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+}
+
+/* Navigatie links in de footer */
+.footer-left a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px
+}
+
+.footer-left a:hover {
+    color: #99958e;
+}
+
+/* Logo in het midden */
+.footer-center img {
+    max-height: 30px;
+}
+
+/* Instagram icoon rechts */
+.footer-right img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 10px;
+    color: #b1afaf;
 }
