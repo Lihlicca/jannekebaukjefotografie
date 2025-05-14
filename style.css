@@ -8,6 +8,7 @@ body {
 header {
     text-align: center;
     padding: 20px 0 10px;
+    background-color: #eaece5;
 }
 
 header img {
@@ -17,7 +18,11 @@ header img {
 }
 
 /* Navigatiemenu */
-
+nav {
+    background-color: #eaece5;
+    padding: 10px 0;
+    font-family: "Quicksand", sans-serif;
+}
 
 nav ul {
     list-style: none;      /* Geen bolletjes */
@@ -43,8 +48,37 @@ nav ul li a:hover {
 }
 
 
-/* midden */
 
+/* Binnenste contentvlak */
+.intro-container {
+    padding: 0px 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+.foto img {
+    max-width: 300px;
+    height: auto;
+}
+
+.intro-tekst {
+    max-width: 600px;
+    text-align: center;
+    color: #463103;
+}
+
+.welkom {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.bio {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
 
 
 
@@ -56,6 +90,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+    font-family: "Quicksand", sans-serif;
 }
 
 footer ul {
@@ -102,6 +137,12 @@ footer ul {
 
 .footer-right i:hover {
     color: #99958e;
+}
+
+.divider {
+    border-left: 0.5px solid #685d45;
+    height: 100px;
+    margin: 0 20px;
 }
 
 .footer-bottom {
