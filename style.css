@@ -1,14 +1,14 @@
 /* Algemeen */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "quicksand", static;
 }
 
-/* Header met logo */
+/* ------- Header met logo ------- */
 header {
     text-align: center;
     padding: 20px 0 10px;
-    background-color: #eaece5;
+    background-color: #f9faf6;
 }
 
 header img {
@@ -17,9 +17,11 @@ header img {
     cursor: pointer;
 }
 
-/* Navigatiemenu */
+
+
+/* ------- Navigatiemenu ------- */
 nav {
-    background-color: #eaece5;
+    background-color: #f9faf6;
     padding: 10px 0;
     font-family: "Quicksand", sans-serif;
 }
@@ -49,29 +51,38 @@ nav ul li a:hover {
 
 
 
-/* Binnenste contentvlak */
-.over-container {
-    padding: 0px 200px;
+
+
+
+/* ------- pagina's -------*/
+
+/* ------- index ------- */
+    /* ------- intro ------- */
+.over-container-intro {
+    padding: 0px 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 7rem;
+    margin-bottom: 0;
 }
 
 .foto img {
-    max-width: 300px;
+    display: block;
+    max-width: 350px;
     height: auto;
 }
 
 .over-tekst {
-    max-width: 600px;
+    max-width: 350px;
     text-align: center;
     color: #463103;
 }
 
 .heading {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-family: "Cinzel Decorative", static;
+    font-size: 1.8em;
+    font-weight: 100;
     margin-bottom: 0.5em;
 }
 
@@ -85,18 +96,189 @@ nav ul li a:hover {
     line-height: 1.5;
 }
 
+.intro-sub {
+    font-family: "Shadows Into Light Two", static;
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
 .divider-h {
-    height: 0.5px;                 /* of 1px als je 'm subtieler wil */
-    width: 200px;                   /* pas aan naar gewenste breedte */
-    background-color: #b4b2ae;      /* kies je gewenste kleur */
-    background: linear-gradient(to right, #ccc, #999, #ccc); /* subtiele glans */
-    margin: 1.5em auto 2em auto;        /* ruimte boven/onder de lijn */
-    border-radius: 5px;           /* afgeronde hoeken */
+    height: 1px;
+    width: 200px;
+    background: linear-gradient(to right, #ccc, #9c8e74, #ccc);
+    margin: 0.2em auto 0.2em auto;
+    border-radius: 5px;
 }
 
 
+
+    /* ------- Fotoshoot keuze ------- */
+.over-container-type {
+    background-color: #f9faf6;
+    padding: 10px 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+.type-blok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em; 
+}
+
+.heading-type {
+    font-family: "Cinzel", static;
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.type-tekst {
+    max-width: 700px;
+    text-align: center;
+    color: #463103;
+}
+
+.hond-kat-paard {
+    display: flex;           /* zet items naast elkaar */
+    gap: 2em;                /* ruimte tussen items */
+    justify-content: center; /* optioneel: centreren binnen de container */
+}
+
+.hond-kat-paard {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.hond-kat-paard {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    margin-top: 0;
+}
+
+.type-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.type-item img {
+    width: 100px;
+    height: 100px;            /* vaste hoogte toevoegen */
+    object-fit: cover;        /* zorgt dat het beeld goed gecropt wordt */
+    border-radius: 50%;       /* maakt de afbeelding perfect rond */
+    margin-bottom: 0.5em;
+    transition: transform 0.3s ease;
+}
+
+.type-item img:hover {
+    transform: scale(1.05);
+}
+
+.type-item p {
+    margin: 0;
+    color: #463103;
+}
+
+.type-button {
+    display: inline-block;
+    margin-bottom: 4em;
+    padding: 0.75em 1.5em;
+    background-color: #584724;
+    color: white;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.type-button:hover {
+    background-color: #685d45;
+}
+
+.divider-h-type {
+    height: 1px;
+    width: 250px;
+    background: linear-gradient(to right, #ccc, #9c8e74, #ccc);
+    margin: 0.2em auto 0.2em auto;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+
+    /* ------- mini portfolio ------- */
+.portfolio-preview {
+    background-color: #ffffff;
+    padding: 60px 200px;
+    text-align: center;
+}
+
+.portfolio-title {
+    font-family: "Cinzel", serif;
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: #463103;
+    margin-bottom: 1em;
+}
+
+.portfolio-grid {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+    margin-top: 3em;
+}
+
+.portfolio-grid img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-grid img:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-button {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: #584724;
+    color: white;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-button:hover {
+    background-color: #685d45;
+}
+
+
+
+
+
+
+
+
+/* ------- footer ------- */
 footer {
-    background-color: #463103;
+    background-color: #2f2716;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -119,8 +301,12 @@ footer ul {
     flex: 1;
 }
 
-/* Navigatie links in de footer */
+
+
+    /* ------- Navigatie links in de footer ------- */
 .footer-left a {
+    font-family: "Cinzel", static;
+    font-weight: lighter;
     margin: 0 10px;
     text-decoration: none;
     color: #ffffff;
@@ -131,23 +317,34 @@ footer ul {
     color: #99958e;
 }
 
-/* Logo in het midden */
+
+
+    /* ------- Logo in het midden ------- */
 .footer-center img {
     max-width: 170px;
 }
 
-/* Socials rechts */
+
+
+    /* ------- Socials rechts ------- */
+.social-icons {
+    display: flex;
+    gap: 20px; /* afstand tussen de iconen */
+}
+
 .footer-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* centreert de iconen horizontaal */
-  gap: 10px;           /* ruimte tussen de iconen */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centreert de iconen horizontaal */
+    gap: 10px;           /* ruimte tussen de iconen */
 }
 
 .footer-title {
-  color: #ffffff;
-  margin-bottom: 10px;
-  font-size: 1rem;
+    font-family: "Cinzel Decorative", static;
+    font-weight: lighter;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 1rem;
 }
 
 .footer-right img {
@@ -158,7 +355,8 @@ footer ul {
 .footer-right i {
     color: #ffffff;
     transition: color 0.3s ease;
-    font-size: 1rem;
+    font-size: 2rem;
+    font-weight: lighter;
 }
 
 .footer-right i:hover {
