@@ -92,6 +92,7 @@ nav ul li a:hover {
 }
 
 .intro {
+    margin-top: 0;
     margin-bottom: 1em;
     line-height: 1.5;
 }
@@ -272,6 +273,70 @@ nav ul li a:hover {
 
 
 
+/* ------- Fotoshoot ------- */
+    /* ------- werkwijze ------- */
+.container-werkwijze {
+    background-color: #ffffff;
+    padding: 10px 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    margin-bottom: 0;
+}
+
+.over-container-werkwijze {
+    background-color: #ffffff;
+    padding: 10px 300px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Belangrijk: zorgt dat alle elementen dezelfde hoogte hebben */
+    gap: 7rem;
+}
+
+.werkwijze-tekst {
+    max-width: 350px;
+    flex: 1; /* Laat het meeschalen naast de divider */
+    text-align: center;
+    color: #463103;
+}
+
+.blank {
+    flex: 1;
+    min-height: 300px; /* zelfde hoogte als de divider bijvoorbeeld */
+}
+
+.divider-werkwijze {
+    width: 1px;
+    background: linear-gradient(to bottom, #ccc, #9c8e74, #ccc); /* to bottom past beter bij verticaal */
+    border-radius: 3px;
+    align-self: stretch; /* Zorgt dat de lijn net zo hoog is als de hoogste kolom */
+}
+
+.werkwijze-header {
+    font-family: "Cinzel", static;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.werkwijze-header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, #ccc, #9c8e74, #ccc);
+    border-radius: 2px;
+}
+
+.over-container-werkwijze.omgekeerd {
+    flex-direction: row-reverse;
+}
 
 
 
