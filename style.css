@@ -194,7 +194,20 @@ nav ul li a:hover {
     display: inline-block;
     margin-bottom: 4em;
     padding: 0.75em 1.5em;
-    background-color: #584724;
+    background-color: #685d45;
+    color: white;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.type-button2 {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 4em;
+    padding: 0.75em 1.5em;
+    background-color: #685d45;
     color: white;
     text-decoration: none;
     font-family: "Quicksand", sans-serif;
@@ -203,7 +216,11 @@ nav ul li a:hover {
 }
 
 .type-button:hover {
-    background-color: #685d45;
+    background-color: #867b63;
+}
+
+.type-button2:hover {
+    background-color: #867b63;
 }
 
 .divider-h-type {
