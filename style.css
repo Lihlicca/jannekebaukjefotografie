@@ -288,11 +288,21 @@ nav ul li a:hover {
 
 .over-container-werkwijze {
     background-color: #ffffff;
-    padding: 10px 300px;
+    padding: 20px 300px;
     display: flex;
     justify-content: center;
     align-items: stretch; /* Belangrijk: zorgt dat alle elementen dezelfde hoogte hebben */
     gap: 7rem;
+}
+
+.over-container-werkwijze2 {
+    background-color: #ffffff;
+    padding: 20px 300px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Belangrijk: zorgt dat alle elementen dezelfde hoogte hebben */
+    gap: 7rem;
+    padding-bottom: 60px;
 }
 
 .werkwijze-tekst {
@@ -338,6 +348,31 @@ nav ul li a:hover {
     flex-direction: row-reverse;
 }
 
+.foto-werkwijze {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-werkwijze img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; /* pas aan op basis van gewenste hoogte */
+    border-radius: 8px; /* optioneel, voor ronde hoeken */
+    object-fit: cover;  /* houdt verhouding mooi */
+}
+
+.divider-streep {
+    height: 1px;
+    width: 100px;
+    background: linear-gradient(to right, #ccc, #9c8e74, #ccc);
+    margin: 0.2em auto 0.2em auto;
+    border-radius: 5px;
+}
+
+
+    /*------ Paard/hond ------- */
 
 
 
