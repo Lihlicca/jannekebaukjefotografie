@@ -192,8 +192,8 @@ nav ul li a:hover {
 
 .type-button {
     display: inline-block;
-    margin-bottom: 4em;
-    padding: 0.75em 1.5em;
+    margin-bottom: 3em;
+    padding: 0.45em 1em;
     background-color: #685d45;
     color: white;
     text-decoration: none;
@@ -394,7 +394,7 @@ nav ul li a:hover {
     display: inline-block;
     margin-bottom: 0em;
     padding: 0.1em 1em;
-    background-color: #685d45;
+    background-color: #706753; 
     color: white;
     text-decoration: none;
     font-family: "Quicksand", sans-serif;
@@ -403,7 +403,7 @@ nav ul li a:hover {
 }
 
 .button:hover {
-    background-color: #867b63;
+    background-color: #a79c85;
 }
 
 .foto2 img {
