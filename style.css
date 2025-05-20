@@ -390,6 +390,27 @@ nav ul li a:hover {
 
 
     /*------ Paard/hond ------- */
+.button {
+    display: inline-block;
+    margin-bottom: 0em;
+    padding: 0.1em 1em;
+    background-color: #685d45;
+    color: white;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #867b63;
+}
+
+.foto2 img {
+    display: block;
+    max-width: 350px;
+    height: auto;
+}
 
 
 
