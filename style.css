@@ -292,39 +292,50 @@ nav ul li a:hover {
 
 /* ------- Fotoshoot ------- */
     /* ------- werkwijze ------- */
+
+.werkwijze-wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
 .container-werkwijze {
     background-color: #ffffff;
-    padding: 10px 300px;
+    max-width: 1500px;
+    margin: 0 auto; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 7rem;
-    margin-bottom: 0;
 }
 
 .over-container-werkwijze {
     background-color: #ffffff;
-    padding: 20px 300px;
+    max-width: 900px;
+    margin: 0 auto; 
     display: flex;
     justify-content: center;
     align-items: stretch; /* Belangrijk: zorgt dat alle elementen dezelfde hoogte hebben */
-    gap: 7rem;
+    gap: 6rem;
 }
 
 .over-container-werkwijze2 {
     background-color: #ffffff;
-    padding: 20px 300px;
+    max-width: 900px;
+    margin: 0 auto; 
     display: flex;
     justify-content: center;
     align-items: stretch; /* Belangrijk: zorgt dat alle elementen dezelfde hoogte hebben */
-    gap: 7rem;
+    gap: 6rem;
     padding-bottom: 60px;
 }
 
 .werkwijze-tekst {
-    max-width: 350px;
+    max-width: 400px;
     flex: 1; /* Laat het meeschalen naast de divider */
+    min-width: 0;
     text-align: center;
     color: #463103;
 }
@@ -367,6 +378,7 @@ nav ul li a:hover {
 
 .foto-werkwijze {
     flex: 1;
+    min-width: 0;
     display: flex;
     justify-content: center;
     align-items: center;
