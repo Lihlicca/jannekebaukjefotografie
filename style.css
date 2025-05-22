@@ -83,7 +83,7 @@ body {
 
 
     /* ------- intro ------- */
-.over-container-intro {
+.container-intro {
     padding: 30px 300px;
     display: flex;
     justify-content: center;
@@ -158,7 +158,7 @@ body {
 
     /* ------- Fotoshoot keuze ------- */
 
-.over-container-type {
+.container-type {
     background-color: #f9faf6;
     padding: 10px 300px;
     display: flex;
@@ -268,7 +268,7 @@ body {
     background-color: #867b63;
 }
 
-.divider-h-type {
+.divider-h-langer {
     height: 1px;
     width: 350px;
     background: linear-gradient(to right, #ccc, #9c8e74, #ccc);
@@ -338,7 +338,7 @@ body {
 
 /* ------- Fotoshoot ------- */
     /* ------- fotoshoot ------- */
-.over-container-fotoshoot {
+.container-fotoshoot {
     padding: 0px 300px;
     display: flex;
     justify-content: center;
@@ -347,7 +347,7 @@ body {
     margin-bottom: 0;
 }
 
-.over-container-fotoshoot2 {
+.container-fotoshoot2 {
     padding: 0px 300px;
     background-color: #f9faf6;
     display: flex;
@@ -357,7 +357,7 @@ body {
     margin-bottom: 0;
 }
 
-.over-tekst {
+.container-tekst {
     max-width: 350px;
     text-align: center;
     color: #463103;
@@ -372,7 +372,7 @@ body {
 }
 
 
-.container-werkwijze {
+.container-werkwijze3 {
     background-color: #ffffff;
     max-width: 1500px;
     margin: 0 auto; 
@@ -383,7 +383,7 @@ body {
     gap: 7rem;
 }
 
-.over-container-werkwijze {
+.container-werkwijze {
     background-color: #ffffff;
     max-width: 900px;
     margin: 0 auto; 
@@ -393,7 +393,7 @@ body {
     gap: 6rem;
 }
 
-.over-container-werkwijze2 {
+.container-werkwijze2 {
     background-color: #ffffff;
     max-width: 900px;
     margin: 0 auto; 
@@ -444,7 +444,7 @@ body {
     border-radius: 2px;
 }
 
-.over-container-werkwijze.omgekeerd {
+.container-werkwijze.omgekeerd {
     flex-direction: row-reverse;
 }
 
