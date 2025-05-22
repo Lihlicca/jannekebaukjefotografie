@@ -4,52 +4,46 @@ body {
     font-family: "quicksand", static;
 }
 
-/* ------- Header met logo ------- */
-header {
-    text-align: center;
-    padding: 20px 0 10px;
-    background-color: #f9faf6;
-}
 
-header img {
-    max-width: 170px;
-    height: auto;
-    cursor: pointer;
-}
 
 
 
 /* ------- Navigatiemenu ------- */
-nav {
-    background-color: #f9faf6;
-    padding: 10px 0;
-    font-family: "Quicksand", sans-serif;
+/* Flexbox header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #e9ece5;
 }
 
-nav ul {
-    list-style: none;      /* Geen bolletjes */
+/* Logo */
+.logo img {
+    max-width: 170px;
+    height: auto;
+}
+
+/* Navigatie */
+.main-nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;         /* Horizontale rij */
-    justify-content: center;
+    display: flex;
+    gap: 20px;
 }
 
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
+.main-nav ul li a {
     display: block;
-    padding: 15px 20px;
+    padding: 15px 10px;
     color: #463103;
     text-decoration: none;
+    font-family: "FIGTREE", sans-serif;
 }
 
-nav ul li a:hover {
+.main-nav ul li a:hover {
     color: #99958e;
 }
-
-
 
 
 
@@ -57,6 +51,37 @@ nav ul li a:hover {
 /* ------- pagina's -------*/
 
 /* ------- index ------- */
+     /* -------banner------- */
+.background-blok {
+    background-image: url("images/Merlin-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 810px; /* of auto + padding */
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding-left: 15%;
+    color: white;
+}
+
+.overlay-tekst {
+    padding: 2em;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.overlay-tekst h1 {
+    font-family: "Cinzel Decorative", serif;
+    font-size: 2.7em;
+    font-weight: 100;
+    margin-bottom: 0.5em;
+}
+
+
     /* ------- intro ------- */
 .over-container-intro {
     padding: 0px 300px;
@@ -73,17 +98,34 @@ nav ul li a:hover {
     height: auto;
 }
 
-.over-tekst {
-    max-width: 350px;
+.intro-tekst {
+    max-width: 800px;
     text-align: center;
     color: #463103;
 }
+
 
 .heading {
     font-family: "Cinzel Decorative", static;
     font-size: 1.8em;
     font-weight: 100;
     margin-bottom: 0.5em;
+}
+
+.heading2 {
+    font-family: "pOiret one", static;
+    font-size: 1.8em;
+    font-weight: lighter;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+}
+
+.subheading {
+    font-family: "Poiret one", static;
+    font-size: 1.3em;
+    font-weight: lighter;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
 }
 
 .bio {
@@ -95,12 +137,7 @@ nav ul li a:hover {
     margin-top: 0;
     margin-bottom: 1em;
     line-height: 1.5;
-}
-
-.sub {
-    font-family: "Shadows Into Light Two", static;
-    margin-bottom: 1em;
-    line-height: 1.5;
+    font-size: 18px;
 }
 
 .divider-h {
@@ -114,12 +151,13 @@ nav ul li a:hover {
 
 
     /* ------- Fotoshoot keuze ------- */
+
 .over-container-type {
     background-color: #f9faf6;
     padding: 0px 300px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 7rem;
 }
 
@@ -132,7 +170,7 @@ nav ul li a:hover {
 
 .heading-type {
     font-family: "Cinzel", static;
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: lighter;
     margin-top: 2em;
     margin-bottom: 0.5em;
@@ -144,20 +182,20 @@ nav ul li a:hover {
     color: #463103;
 }
 
-.hond-kat-paard {
+.hond-paard {
     display: flex;           /* zet items naast elkaar */
     gap: 2em;                /* ruimte tussen items */
     justify-content: center; /* optioneel: centreren binnen de container */
 }
 
-.hond-kat-paard {
+.hond-paard {
     display: flex;
     gap: 2em;
     justify-content: center;
     margin-top: 0;
 }
 
-.hond-kat-paard {
+.hond-paard {
     display: flex;
     justify-content: center;
     gap: 3em;
@@ -173,8 +211,8 @@ nav ul li a:hover {
 }
 
 .type-item img {
-    width: 100px;
-    height: 100px;            /* vaste hoogte toevoegen */
+    width: 200px;
+    height: 200px;            /* vaste hoogte toevoegen */
     object-fit: cover;        /* zorgt dat het beeld goed gecropt wordt */
     border-radius: 50%;       /* maakt de afbeelding perfect rond */
     margin-bottom: 0.5em;
@@ -193,8 +231,8 @@ nav ul li a:hover {
 .type-button {
     display: inline-block;
     margin-bottom: 3em;
-    padding: 0.45em 1em;
-    background-color: #685d45;
+    padding: 0.7em 1.2em;
+    background-color: #584724;
     color: white;
     text-decoration: none;
     font-family: "Quicksand", sans-serif;
@@ -207,7 +245,7 @@ nav ul li a:hover {
     margin-top: 2rem;
     margin-bottom: 4em;
     padding: 0.75em 1.5em;
-    background-color: #685d45;
+    background-color: #584724;
     color: white;
     text-decoration: none;
     font-family: "Quicksand", sans-serif;
@@ -291,6 +329,22 @@ nav ul li a:hover {
 
 
 /* ------- Fotoshoot ------- */
+    /* ------- fotoshoot ------- */
+.over-container-fotoshoot {
+    padding: 0px 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    margin-bottom: 0;
+}
+
+.over-tekst {
+    max-width: 350px;
+    text-align: center;
+    color: #463103;
+}
+
     /* ------- werkwijze ------- */
 
 .werkwijze-wrapper {
