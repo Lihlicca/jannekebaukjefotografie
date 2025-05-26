@@ -84,7 +84,7 @@ body {
 
     /* ------- intro ------- */
 .container-intro {
-    padding: 30px 300px;
+    padding: 30px 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,7 +143,15 @@ body {
     margin-top: 0;
     margin-bottom: 1em;
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.index-text {
+    margin-top: 0;
+    margin-bottom: 1em;
+    line-height: 1.5;
+    font-size: 16px;
 }
 
 .divider-h {
