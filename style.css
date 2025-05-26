@@ -53,18 +53,18 @@ body {
 /* ------- index ------- */
      /* -------banner------- */
 .background-blok {
-    background-image: url("images/merlin-3.jpg");
+    background-image: url("images/merlin-3.2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    height: 890px; /* of auto + padding */
+    height: 700px; /* of auto + padding */
     position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     text-align: left;
-    padding-left: 15%;
+    padding-left: 10%;
     color: white;
 }
 
