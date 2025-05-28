@@ -347,7 +347,7 @@ body {
 /* ------- Fotoshoot ------- */
     /* ------- fotoshoot ------- */
 .container-fotoshoot {
-    padding: 0px 300px;
+    padding: 0px 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -356,7 +356,7 @@ body {
 }
 
 .container-fotoshoot2 {
-    padding: 0px 300px;
+    padding: 0px 350px;
     background-color: #f9faf6;
     display: flex;
     justify-content: center;
